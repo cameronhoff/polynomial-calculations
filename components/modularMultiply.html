@@ -23,5 +23,44 @@
                 <a class="nav-link active" href="./modularMultiply.html">Модулярне множення</a>
             </li>
         </ul>
+        <div class="container">
+            <div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="notation-selector">Система числення:</label>
+                    </div>
+                    <select class="custom-select" id="notation-selector">
+                        <option selected>Вибрати</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                    </select>
+                    </div>
+            </div>
+            <div>
+                <div class="form-group row mb-2 mt-2">
+                    <label class="col-sm-2 col-form-label">Множник-1:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="irreducible-polynomial-input" placeholder="Множник 1">
+                    </div>
+                </div> 
+                <div class="form-group row mb-2">
+                    <label class="col-sm-2 col-form-label">Множник-2:</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="formative-element-input" placeholder="Множник 2">
+                    </div> 
+                </div>
+                <div class="form-group row mb-2">
+                    <label class="col-sm-2 col-form-label">Добуток:</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="vector-initial-input" placeholder="Добуток">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary">Розрахувати</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
