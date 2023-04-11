@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   // function to enable/disable calculate button based on selected radix
-  function updateCalcBtn() {
+  function updateCalcMmBtn() {
     const radix = document.querySelector('#radix-selector').value;
     if (radix === "Вибрати") {
-      calcBtn.setAttribute('class', 'btn btn-primary disabled');
+      calcMmBtn.setAttribute('class', 'btn btn-primary disabled');
     } else {
-      calcBtn.setAttribute('class', 'btn btn-primary'); 
+      calcMmBtn.setAttribute('class', 'btn btn-primary'); 
     }
   }
 
   // select calculate button
-  const calcBtn = document.querySelector('#modularMultCalcBtn');
+  const calcMmBtn = document.querySelector('#modularMultCalcBtn');
 
   // call the function once to initialize the button state
-  updateCalcBtn();
+  updateCalcMmBtn();
 
   // add event listener to update button state every time the selector changes
-  document.querySelector('#radix-selector').addEventListener('change', updateCalcBtn);
+  document.querySelector('#radix-selector').addEventListener('change', updateCalcMmBtn);
 
-  calcBtn.addEventListener('click', () => {
+  calcMmBtn.addEventListener('click', () => {
     // read first multiplier
     const m1 = document.querySelector('#multiplier1-input').value;
     // read second multiplier 
