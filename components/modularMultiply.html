@@ -29,7 +29,7 @@
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="notation-selector">Система числення:</label>
                     </div>
-                    <select class="custom-select" id="notation-selector">
+                    <select class="custom-select" id="radix-selector">
                         <option selected>Вибрати</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -58,9 +58,10 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary">Розрахувати</button>
+                    <button type="button" id="modularMultCalcBtn" class="btn btn-primary">Розрахувати</button>
                 </div>
             </div>
         </div>
+        <script src="../scripts/modularMult.js"></script>
     </body>
 </html>
